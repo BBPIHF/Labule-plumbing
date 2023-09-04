@@ -1,0 +1,286 @@
+:root{
+    --main-color:#0018a0;
+    --secondary-color:#018ada;
+    --border: .1rem solid rgba(0, 0, 0, 0.2);
+    --shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+*{
+    text-transform: capitalize;
+}
+
+.btn{
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.preloader{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #010338;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: .3s linear;
+  }
+  
+  .hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+  }
+  
+  .preloader img{
+    width: 300px;
+  }
+  
+
+.section-padding{
+    padding: 4rem 0;
+}
+
+
+#carouselExampleAutoplaying{
+    clip-path: polygon(100% 100%, 49% 89%, 0 100%, 0 47%, 0 0, 100% 0);
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.carousel-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.nav-section{
+    z-index: 200;
+}
+
+.nav-section .navbar-nav a{
+    font-size: 1.7rem;
+    margin: 1.5rem 1rem;
+    
+}
+
+.navbar-nav .nav-item a:hover{
+    color: var(--main-color) ;
+    border-bottom: 1px solid var(--main-color)
+}
+
+.navbar-brand{
+    font-size: 3rem;
+}
+.logo{
+    color:var(--main-color);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.content h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    /* letter-spacing: .2rem; */
+    color: #fff;
+}
+
+.content p{
+    color: #fff;
+    margin: auto;
+    font-size: 1.5rem;
+    line-height: 1.9;
+    width: 90%;
+}
+
+.btn{
+    font-size: 2rem;
+    color: #fff;
+    background:var(--main-color);
+    padding: 1rem;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+#services .row .card-body .btn{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#services .btn:hover{
+    opacity: .7;
+}
+
+#about .container .row{
+    align-items: center;
+}
+
+#about .container .row .about-img img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#about .container .row .about-text h1{
+    padding-bottom: 2rem;
+}
+
+#about .container .row .about-text p{
+    font-size: 1.4rem;
+}
+
+#about .container .row img{
+    height: 35rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+#services{
+    clip-path: polygon(100% 100%, 0 100%, 0 43%, 0 1%, 51% 11%, 100% 0);
+}
+
+
+#services .section-header{
+    padding-top: 8rem;
+}
+.services .card-body i{
+    font-size: 7rem;
+    color:var(--secondary-color);
+    padding-bottom: 2rem;
+}
+
+.services .row h2{
+    font-size: 4rem;
+}
+.services .row p{
+    font-size: 1.5rem;
+}
+
+#portfolio .card{
+    box-shadow: var(--shadow);
+}
+
+#portfolio .btn{
+    color: #fff;
+    background-color: var(--secondary-color);
+
+}
+
+#portfolio .btn:hover{
+   opacity: .7;
+}
+
+#team{
+    clip-path: polygon(100% 0, 100% 100%, 50% 93%, 0 100%, 0 0, 32% 0);
+}
+
+#team .row img{
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+}
+
+#team .card{
+    box-shadow: var(--shadow);
+    background-color: var(--secondary-color);
+}
+#team .container{
+    padding-bottom: 4rem;
+}
+
+#team .row .socials i{
+    font-size: 1.7rem;
+}
+
+#team .row .card-text{
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+#team .row h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+#team .row h2{
+    font-size: 4rem;
+    color: #fff;
+}
+
+
+#team .row p{
+    font-size: 1.5rem;
+}
+
+
+#contact .row h2 {
+    font-size: 4rem;
+}
+
+#contact .row p {
+    font-size: 1.5rem;
+}
+
+#portfolio .row h2 {
+    font-size: 4rem;
+}
+
+#portfolio .row p {
+    font-size: 1.5rem;
+}
+
+#portfolio .row .img-area img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#contact .row input{
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+#contact .row textarea{
+    font-size: 1.5rem;
+    resize: none;
+}
+
+
+@media  (max-width:740px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:450px){
+    .nav-section .navbar-nav{
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .nav-section .navbar-nav a{
+        margin: .5rem 0;
+    }
+}
